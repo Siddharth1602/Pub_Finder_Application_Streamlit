@@ -7,7 +7,7 @@ from streamlit_folium import folium_static
 from scipy.spatial.distance import euclidean
 from sklearn.cluster import KMeans
 
-df = pd.read_csv("Project_8\open_pubs.csv")
+df = pd.read_csv("open_pubs.csv")
 
 # Drop rows where 'Latitude' is '\N'
 df = df[df['Latitude'] != r'\N']
